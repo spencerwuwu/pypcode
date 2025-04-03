@@ -1,5 +1,11 @@
 pypcode
 =======
+
+## Install
+```bash
+pip install -r requirements-dev.txt
+```
+
 [![pypi](https://img.shields.io/pypi/v/pypcode)](https://pypi.org/project/pypcode/)
 
 Machine code disassembly and IR translation library for Python using the
