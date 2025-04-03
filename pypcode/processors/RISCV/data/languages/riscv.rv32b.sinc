@@ -14,7 +14,13 @@
 
 :clmulr rd, rs1, rs2 is op0006=0x33 & op1214=0x2 & op2531=0x5 & rd & rs1 & rs2 unimpl
 
-:clz rd, rs1 is op0006=0x13 & op1214=0x1 & op2024=0x0 & op2531=0x30 & rd & rs1 unimpl
+#---------------------------------------------------------------------
+# CLZ - Count Leading Zeros
+#---------------------------------------------------------------------
+:clz rd, rs1 is op0006=0x13 & op1214=0x1 & op2024=0x0 & op2531=0x30 & rd & rs1 
+{
+	rd = lzcount(rs1);
+}
 
 :cmix rd, rs2, rs1, rs3 is op0006=0x33 & op1214=0x1 & op2526=0x3 & rd & rs1 & rs2 & rs3 unimpl
 
